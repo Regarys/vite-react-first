@@ -45,7 +45,7 @@ function NavitgationBar() {
         {/* Mobile Menu */}
         <div className={`hamburgerMenu ${isHidden ? '' : 'hidden'}`}>
           <a onClick={toggleActive}>
-            <img src="/hamburgerMenu.svg" alt="Menu" />
+            <img src={import.meta.env.BASE_URL + "/hamburgerMenu.svg"} alt="Menu" />
           </a>
           <div className={`dropdownMenu`} style={{ display: clicked ? 'flex' : 'none' }}>
             <Link to="/">Counter</Link>
